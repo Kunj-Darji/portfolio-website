@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunj Darji — Portfolio</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome 6 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- ========== PRELOADER ========== -->
+    <div id="preloader">
+        <div class="loader-content">
+            <div class="loader-ring"></div>
+            <span class="loader-text">KD</span>
+        </div>
+    </div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <!-- Logo / Brand -->
+            <a class="navbar-brand" href="#home">
+                <span class="brand-accent">K</span>unj<span class="brand-dot">.</span>
+            </a>
+
+            <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarContent" aria-controls="navbarContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
+                <span class="toggler-line"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ms-auto me-3 align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-glow"></div>
+        <div class="container position-relative">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 col-xl-7">
+                    <div class="hero-content">
+                        <div class="hero-badge fade-up" data-delay="0">
+                            <span class="badge-dot"></span>
+                            Open to opportunities
+                        </div>
+                        <h1 class="hero-title fade-up" data-delay="100">
+                            Hi, I'm <span class="text-gradient">Kunj Darji</span>
+                        </h1>
+                        <p class="hero-subtitle fade-up" data-delay="200">
+                            A curious builder exploring the intersection of
+                            <span class="highlight">code</span>, <span class="highlight">AI</span>,
+                            and <span class="highlight">creative problem-solving</span>.
+                        </p>
+                        <p class="hero-desc fade-up" data-delay="300">
+                            I craft digital experiences — from intelligent interview platforms
+                            to interactive web solutions. Currently shaping my path in tech,
+                            one project at a time.
+                        </p>
+                        <div class="hero-actions fade-up" data-delay="400">
+                            <a href="#projects" class="btn btn-primary-custom">
+                                <span>View My Work</span>
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                            <a href="#contact" class="btn btn-outline-custom">
+                                <span>Get in Touch</span>
+                            </a>
+                        </div>
+                        <div class="hero-stats fade-up" data-delay="500">
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="4">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label">Projects</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="6">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label">Technologies</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-count="100">0</span><span class="stat-plus">%</span>
+                                <span class="stat-label">Passion</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero Visual -->
+                <div class="col-lg-4 col-xl-5 d-none d-lg-block">
+                    <div class="hero-visual fade-up" data-delay="300">
+                        <div class="hero-code-block">
+                            <div class="code-header">
+                                <span class="code-dot red"></span>
+                                <span class="code-dot yellow"></span>
+                                <span class="code-dot green"></span>
+                                <span class="code-filename">kunj.js</span>
+                            </div>
+                            <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">kunj</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Kunj Darji"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Explorer"</span>,
+  <span class="code-prop">skills</span>: [
+    <span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>,
+    <span class="code-string">"JavaScript"</span>, <span class="code-string">"Python"</span>
+  ],
+  <span class="code-prop">passion</span>: <span class="code-string">"Building things"</span>,
+  <span class="code-method">create</span>() {
+    <span class="code-keyword">return</span> <span class="code-string">"Something amazing"</span>;
+  }
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator fade-up" data-delay="600">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="section-padding">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Getting to <span class="text-gradient">know me</span></h2>
+            </div>
+
+            <div class="row g-5 align-items-center mt-4">
+                <!-- About Image -->
+                <div class="col-lg-5 scroll-reveal">
+                    <div class="about-image-wrapper">
+                        <div class="about-image-border"></div>
+                        <div class="about-image">
+                            <img src="https://picsum.photos/seed/kunjportrait/500/600.jpg" alt="Kunj Darji">
+                        </div>
+                        <div class="about-experience-badge">
+                            <span class="exp-number">🚀</span>
+                            <span class="exp-text">Always<br>Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Content -->
+                <div class="col-lg-7">
+                    <div class="about-content scroll-reveal">
+                        <h3 class="about-heading">
+                            A passionate learner turning ideas into
+                            <span class="text-gradient">real projects</span>
+                        </h3>
+                        <p class="about-text">
+                            I'm Kunj Darji — someone who loves diving into new technologies
+                            and figuring out how things work. While I haven't locked into a
+                            single title yet, that freedom lets me explore web development,
+                            AI tools, and creative problem-solving without boundaries.
+                        </p>
+                        <p class="about-text">
+                            My journey so far has been driven by curiosity: building an AI-powered
+                            mock interview platform, creating tools to help students ace their vivas,
+                            and continuously expanding my skill set. I believe the best way to
+                            learn is to build.
+                        </p>
+
+                        <!-- Info Cards -->
+                        <div class="row g-3 mt-3">
+                            <div class="col-sm-6">
+                                <div class="info-card">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <div>
+                                        <strong>Education</strong>
+                                        <span>Student, Exploring Tech</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="info-card">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <strong>Location</strong>
+                                        <span>India</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="info-card">
+                                    <i class="fas fa-language"></i>
+                                    <div>
+                                        <strong>Languages</strong>
+                                        <span>English, Hindi, Gujarati</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="info-card">
+                                    <i class="fas fa-heart"></i>
+                                    <div>
+                                        <strong>Interests</strong>
+                                        <span>AI, Web Dev, Open Source</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Resume Download -->
+                        <div class="mt-4">
+                            <a href="#" class="btn btn-primary-custom" id="resumeBtn">
+                                <i class="fas fa-download"></i>
+                                <span>Download Resume</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="section-padding section-alt">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Projects</span>
+                <h2 class="section-title">Things I've <span class="text-gradient">built</span></h2>
+                <p class="section-desc">A selection of projects that showcase my skills and interests.</p>
+            </div>
+
+            <!-- Project Filter -->
+            <div class="project-filters scroll-reveal mt-4">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="ai">AI / ML</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="tool">Tools</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="row g-4 mt-3" id="projectsGrid">
+
+                <!-- Project 1 -->
+                <div class="col-md-6 col-lg-6 project-item scroll-reveal" data-category="ai">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://picsum.photos/seed/mockmate-ai/700/450.jpg" alt="MockMate">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            <span class="project-tag">AI / ML</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">MockMate — AI Mock Interview Platform</h3>
+                            <p class="project-desc">
+                                An intelligent platform that simulates real interview scenarios using AI.
+                                Users can practice domain-specific questions, receive instant feedback,
+                                and improve their communication skills before the actual interview.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>AI/ML</span>
+                                <span>Web</span>
+                                <span>NLP</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-md-6 col-lg-6 project-item scroll-reveal" data-category="ai tool">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://picsum.photos/seed/viva-defender/700/450.jpg" alt="Viva Defender">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            <span class="project-tag">Tool</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Viva / Interview Defender</h3>
+                            <p class="project-desc">
+                                A smart tool designed to help students prepare for vivas and oral exams.
+                                Generates potential questions from study material, provides model answers,
+                                and tracks preparation progress over time.
+                            </p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>AI</span>
+                                <span>Automation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-6 project-item scroll-reveal" data-category="web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://picsum.photos/seed/portfolio-site/700/450.jpg" alt="Portfolio Website">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            <span class="project-tag">Web Dev</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Personal Portfolio Website</h3>
+                            <p class="project-desc">
+                                A clean, modern portfolio built from scratch with Bootstrap 5,
+                                featuring dark/light mode, smooth animations, responsive design,
+                                and interactive elements throughout.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Bootstrap 5</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="col-md-6 col-lg-6 project-item scroll-reveal" data-category="tool web">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://picsum.photos/seed/taskflow-app/700/450.jpg" alt="TaskFlow">
+                            <div class="project-overlay">
+                                <a href="#" class="project-link" title="Live Demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Source Code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                            <span class="project-tag">Web Dev</span>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">TaskFlow — Productivity Dashboard</h3>
+                            <p class="project-desc">
+                                A minimal task management app with drag-and-drop boards, priority labels,
+                                and a clean Kanban-style interface. Built to simplify daily workflow
+                                and track productivity effortlessly.
+                            </p>
+                            <div class="project-tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>LocalStorage</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skills" class="section-padding">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Skills</span>
+                <h2 class="section-title">My <span class="text-gradient">toolkit</span></h2>
+                <p class="section-desc">Technologies and tools I work with.</p>
+            </div>
+
+            <div class="row g-5 mt-4">
+                <!-- Technical Skills with Progress Bars -->
+                <div class="col-lg-6 scroll-reveal">
+                    <h3 class="skills-subtitle">
+                        <i class="fas fa-code"></i> Technical Skills
+                    </h3>
+                    <div class="skills-bars">
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span class="skill-name">CSS3 / Bootstrap</span>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span class="skill-name">AI / ML Basics</span>
+                                <span class="skill-percent">65%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar-item">
+                            <div class="skill-bar-header">
+                                <span class="skill-name">Git & GitHub</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill" data-width="70"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies Icons Grid -->
+                <div class="col-lg-6 scroll-reveal">
+                    <h3 class="skills-subtitle">
+                        <i class="fas fa-tools"></i> Tools & Technologies
+                    </h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-bootstrap"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-brain"></i>
+                            <span>AI / ML</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-terminal"></i>
+                            <span>Terminal</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fas fa-code-branch"></i>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="section-padding section-alt">
+        <div class="container">
+            <!-- Section Header -->
+            <div class="section-header scroll-reveal">
+                <span class="section-tag">Contact</span>
+                <h2 class="section-title">Let's <span class="text-gradient">connect</span></h2>
+                <p class="section-desc">Have an idea, question, or just want to say hi? Drop me a message.</p>
+            </div>
+
+            <div class="row g-5 mt-4">
+                <!-- Contact Info -->
+                <div class="col-lg-5 scroll-reveal">
+                    <div class="contact-info">
+                        <h3 class="contact-heading">Get in touch</h3>
+                        <p class="contact-text">
+                            I'm always open to discussing new projects, creative ideas,
+                            or opportunities to be part of something exciting.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <strong>Email</strong>
+                                    <span>kunjd@example.com</span>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <strong>Location</strong>
+                                    <span>India</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Social Links -->
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter / X">
+                                <i class="fab fa-x-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Discord">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7 scroll-reveal">
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nameInput" class="form-label">Full Name</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-user input-icon"></i>
+                                        <input type="text" class="form-control" id="nameInput"
+                                               placeholder="John Doe" required>
+                                    </div>
+                                    <div class="invalid-feedback" id="nameError">Please enter your name.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="emailInput" class="form-label">Email Address</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-envelope input-icon"></i>
+                                        <input type="email" class="form-control" id="emailInput"
+                                               placeholder="john@example.com" required>
+                                    </div>
+                                    <div class="invalid-feedback" id="emailError">Please enter a valid email.</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="subjectInput" class="form-label">Subject</label>
+                                    <div class="input-wrapper">
+                                        <i class="fas fa-tag input-icon"></i>
+                                        <input type="text" class="form-control" id="subjectInput"
+                                               placeholder="What's this about?" required>
+                                    </div>
+                                    <div class="invalid-feedback" id="subjectError">Please enter a subject.</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="messageInput" class="form-label">Message</label>
+                                    <div class="input-wrapper textarea-wrapper">
+                                        <i class="fas fa-comment-dots input-icon textarea-icon"></i>
+                                        <textarea class="form-control" id="messageInput" rows="5"
+                                                  placeholder="Tell me about your idea..." required></textarea>
+                                    </div>
+                                    <div class="invalid-feedback" id="messageError">Please enter a message.</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary-custom btn-submit" id="submitBtn">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-loading d-none">
+                                        <i class="fas fa-spinner fa-spin"></i> Sending...
+                                    </span>
+                                    <i class="fas fa-paper-plane btn-icon"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Success Toast -->
+                    <div class="form-toast" id="formToast">
+                        <div class="toast-icon"><i class="fas fa-check-circle"></i></div>
+                        <div>
+                            <strong>Message Sent!</strong>
+                            <p>Thanks for reaching out. I'll get back to you soon.</p>
+                        </div>
+                        <button class="toast-close" id="toastClose"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home"><span class="brand-accent">K</span>unj<span class="brand-dot">.</span></a>
+                    <p>Building, learning, and growing — one project at a time.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Kunj Darji. Crafted with <i class="fas fa-heart" style="color: var(--accent);"></i> and curiosity.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== BACK TO TOP ========== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
