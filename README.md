@@ -50,16 +50,16 @@ Portfolio Link: https://kunj-darji.github.io/portfolio-website/
 
 ## 📸 Screenshots
 
-(Add screenshots of your portfolio website here)
+<img width="1920" height="1080" alt="Screenshot 2026-05-18 154059" src="https://github.com/user-attachments/assets/80aab354-6452-4d64-854c-b1c03c89694d" />
+
 
 ---
 
 ## 📫 Contact Me
 
 - Email: kunjdarji857@gamil.com
-- LinkedIn: Kunj Darji(https://www.linkedin.com/in/kunjkdarji)
-- GitHub: Kunj :)(https://github.com/Kunj-Darji)
-
+- LinkedIn: https://www.linkedin.com/in/kunjkdarji
+- GitHub: https://github.com/Kunj-Darji
 ---
 
 ## ⭐ Thank You
